@@ -67,12 +67,11 @@ button {
 <div class="CON-Container">
   <div>
 <!--Anfang Des Voting Elements -->
-
-
-
-
 <div class="main-container">
 
+
+
+<div class="content-box-wrapper">
 <div class="CON-contentBox CON-statement">
   
 	<div class="CON-header">
@@ -122,14 +121,69 @@ button {
 
 
 </div>
+</div>
 
 
 
 
 
 
+<div class="content-box-wrapper">
+<div class="CON-contentBox CON-statement">
+  
+	<div class="CON-header">
+		 Name
+	</div>
+	
+	
+    <div class="parent-container"> 
+        <div class="child-container"> 
+            <span class="bottom-corner">
+						<div class="CON-info">
+							<a href="/moreAnswer/7"><button>∞</button></a>
+						</div>
+						<div class="CON-info">
+              <a><button class="extra-button"><img class="extra-button-img color-darkmode-inverte" src="pictures/chronik.png" alt="Chronik"></button></a>
+						</div>
+						</span>
+            <p> 
+                GeeksforGeeks is a leading platform that as
+                along with interview and exam 
+                preparations for upcoming aspirants.along with interview and exam 
+                preparations for upcoming aspirants.
+								along with interview and exam 
+                preparations for upcoming aspirants.
+								along with interview and exam 
+                preparations for upcoming aspirants.
+            </p> 
+        </div> 
+    </div> 
+		
+		
+		
+
+	<div class="main-wrapper">
+
+		<span class="main">
+			<button class="negative" type="submit" name="score" value=-4>-4</button>
+			<button class="negative" type="submit" name="score" value=-3>-3</button>
+			<button class="negative" type="submit" name="score" value=-2>-2</button>
+			<button class="negative" type="submit" name="score" value=-1>-1</button>
+			<button class="positive" type="submit" name="score" value=+1>+1</button>
+			<button class="positive" type="submit" name="score" value=+2>+2</button>
+			<button class="positive" type="submit" name="score" value=+3>+3</button>
+			<button class="positive" type="submit" name="score" value=+4>+4</button>
+		</span>
+	</div>
 
 
+</div>
+</div>
+
+
+
+
+<div class="content-box-wrapper">
 <div class="CON-contentBox CON-statement">
   
 	<div class="CON-header">
@@ -201,6 +255,7 @@ button {
 
 
 </div>
+</div>
 
 
 
@@ -221,6 +276,87 @@ button {
 		<a href="index.html"><button class="center-button">zurück
 	</button></a>
 </div>
+
+
+
+
+
+<style>
+/* Modal-Hintergrund */
+.modal {
+  display: none; /* Unsichtbar standardmäßig */
+  position: fixed;
+  z-index: 9999; /* Ganz oben */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); /* Halbdurchsichtiger Hintergrund */
+}
+
+/* Modal-Inhalt */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 6px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Schließen-Button (X) */
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+.close-modal:hover {
+  color: #000;
+}
+</style>
+
+<!-- Modal-Element (am Ende vom Body setzen) -->
+<div id="chronikModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Chronik</h2>
+    <p>Hier könnte dein Chronik-Text oder andere Inhalte stehen.</p>
+  </div>
+</div>
+
+<script>
+// Elemente holen
+const chronikButton = document.querySelector('.extra-button'); 
+const modal = document.getElementById('chronikModal');
+const closeModalBtn = document.querySelector('.close-modal');
+
+// Öffnen, wenn Button geklickt
+chronikButton.addEventListener('click', function(e) {
+  e.preventDefault(); // Falls es ein Link ist, nicht navigieren
+  modal.style.display = 'block';
+});
+
+// Schließen, wenn X geklickt wird
+closeModalBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// Schließen, wenn auf den Hintergrund geklickt wird
+window.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+</script>
+
+
+
 
 </body>
 </html>

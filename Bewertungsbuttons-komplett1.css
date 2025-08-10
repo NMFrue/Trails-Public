@@ -14,6 +14,11 @@ body {
   margin-top: 0;
 }
 
+.content-box-wrapper {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
 .CON-Container {
   margin-left: auto;
   margin-right: auto;
@@ -28,6 +33,7 @@ body {
   margin-right: auto;
   width: 100%;
   border: 1px solid var(--General-highlight-Color);
+  box-sizing: border-box;
 }
 .CON-statement .CON-header {
   position: relative;
