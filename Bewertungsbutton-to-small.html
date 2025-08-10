@@ -1,0 +1,223 @@
+		
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		button {
+      width: 4rem;
+		  height: 5rem;
+		  text-align: center;
+		  text-decoration: none;
+		  font-size: 0.8rem;
+		  border-radius: 8px;
+		  margin-left: 1px;
+      margin-right: 1px;
+    }
+
+
+
+
+
+
+
+
+		.placeholder{
+			padding: 3rem;
+			background-color: var(--General-background-Color);
+		}
+		.placeholder-spinner{
+			margin: 1rem auto;
+		}
+
+
+
+
+
+
+
+
+
+		
+	/* .main-wrapper {
+
+		width: 100%;
+		//max-width: 37rem;
+		margin: auto;
+		// border: 1px solid #c3c3c3;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+		padding-top: 3px;
+		padding-bottom: 10px;
+
+		.main {
+			max-width: 100%;
+			display: inline-flex;
+
+			button {
+				width: 3rem;
+				height: 3rem;
+
+				// border: 1px solid black;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1rem;
+				border-radius: 8px;
+				//margin-left: calc((100vw - 3rem*8)/32);
+				//margin-right: calc((100vw - 3rem*8)/32);
+				margin-left: 1px;
+				margin-right: 1px;
+				
+			}
+		}
+	} */
+
+
+
+
+
+
+
+
+
+.main-wrapper {
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+.main-wrapper .main {
+    max-width: 100%;
+    display: inline-flex;
+}
+
+.main-wrapper .main button {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+
+
+
+
+
+.extra-button {
+
+}
+.extra-button-img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+button.negative {
+    border-color: #ff0000;
+}
+
+button.positive {
+    border-color: #00ff00;
+}
+
+button.MORE-zero-null {
+    border-color: #cccccc;
+}
+
+button.MORE-zero-null.selected {
+    background-color: #cccccc;
+}
+
+button.negative.selected {
+    background-color: #ff0000;
+}
+
+button.positive.selected {
+    background-color: #00ff00;
+}
+
+
+
+
+
+   </style>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+  <div class="CON-Container">
+    
+    
+    <div>
+
+<!--Anfang Des Voting Elements -->
+<div class="CON-contentBox CON-statement">
+  <div class="main-wrapper">
+    <span class="main">
+      <input type="hidden" id="answer_id" :value='answer.answer_id'>
+
+      <button :class="{ 'selected': answer.score == -8, 'negative': true }" type="submit" name="score" value=-8 @click="handleVote">-8</button>
+      <button :class="{ 'selected': answer.score == -4, 'negative': true }" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button :class="{ 'selected': answer.score == -2, 'negative': true }" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+      <button :class="{ 'selected': answer.score == -1, 'negative': true }" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+      <button :class="{ 'selected': answer.score == null || answer.score == 0, 'MORE-zero-null': true }" type="submit" name="score" value=+0 @click="handleVote">+0</button>
+      <button :class="{ 'selected': answer.score == +1, 'positive': true }" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+      <button :class="{ 'selected': answer.score == +2, 'positive': true }" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+      <button :class="{ 'selected': answer.score == +4, 'positive': true }" type="submit" name="score" value=+4 @click="handleVote">+4</button>
+      <button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+    </span>
+  </div>
+
+</div>
+
+
+<!--Ende Des Voting Elements -->
+
+
+
+
+    </div>
+    
+
+  </div>
+
+  
+
+
+
+
+	
+	
+
+
+
+
+	
+</body>
+</html>
+		
+		
+	
+
+
+    
