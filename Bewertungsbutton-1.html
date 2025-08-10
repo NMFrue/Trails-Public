@@ -151,6 +151,20 @@ button.positive.selected {
 
 
 
+.center-button {
+    display: block;         /* Damit margin funktioniert */
+    margin: 50px auto 0;    /* 50px Abstand nach oben, automatisch links/rechts */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+
+
    </style>
 
 </head>
@@ -174,15 +188,15 @@ button.positive.selected {
     <span class="main">
       <input type="hidden" id="answer_id" :value='answer.answer_id'>
 
-      <button :class="{ 'selected': answer.score == -8, 'negative': true }" type="submit" name="score" value=-8 @click="handleVote">-8</button>
-      <button :class="{ 'selected': answer.score == -4, 'negative': true }" type="submit" name="score" value=-4 @click="handleVote">-4</button>
-      <button :class="{ 'selected': answer.score == -2, 'negative': true }" type="submit" name="score" value=-2 @click="handleVote">-2</button>
-      <button :class="{ 'selected': answer.score == -1, 'negative': true }" type="submit" name="score" value=-1 @click="handleVote">-1</button>
-      <button :class="{ 'selected': answer.score == null || answer.score == 0, 'MORE-zero-null': true }" type="submit" name="score" value=+0 @click="handleVote">+0</button>
-      <button :class="{ 'selected': answer.score == +1, 'positive': true }" type="submit" name="score" value=+1 @click="handleVote">+1</button>
-      <button :class="{ 'selected': answer.score == +2, 'positive': true }" type="submit" name="score" value=+2 @click="handleVote">+2</button>
-      <button :class="{ 'selected': answer.score == +4, 'positive': true }" type="submit" name="score" value=+4 @click="handleVote">+4</button>
-      <button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
+      <button class="negative" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+      <button class="negative" type="submit" name="score" value=-8 @click="handleVote">-8</button>
+      <button class="negative" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button class="negative" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+      <button class="MORE-zero-null" type="submit" name="score" value=+0 @click="handleVote">+0</button>
+      <button class="positive" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+      <button class="positive" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+      <button class="positive" type="submit" name="score" value=+4 @click="handleVote">+4</button>
+      <button class="positive" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
     </span>
   </div>
 
@@ -204,9 +218,8 @@ button.positive.selected {
 
 
 <div>
-	<button class="center-button">
-		<a href="/Trails-Public/index.html"></a>
-	</button>
+		<a href="/Trails-Public/index.html"><button class="center-button">
+	</button></a>
 </div>
 	
 	
