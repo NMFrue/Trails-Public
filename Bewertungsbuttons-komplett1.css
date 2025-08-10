@@ -50,7 +50,7 @@ body {
 .CON-statement .parent-container .child-container .bottom-corner button {
   width: 3rem;
   height: 3rem;
-  border: 1px solid black;
+  border: 2px solid black;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
