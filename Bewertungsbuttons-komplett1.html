@@ -292,16 +292,65 @@ button {
 .close-modal:hover {
   color: #000;
 }
+
+
+/*Bewertungsbuttons */
+.bewertung-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.bewertung-box {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  min-width: 200px;
+}
+
+.green {
+  border-color: #00c000;
+}
+
+.red {
+  border-color: #ff0000;
+}
+
+.neutral {
+  border-color: #000;
+}
+
+
+
 </style>
 
 <!-- Modal-Element (am Ende vom Body setzen) -->
 <div id="chronikModal" class="modal">
   <div class="modal-content">
     <span class="close-modal">&times;</span>
-    <h2>Chronik</h2>
-    <p>Hier könnte dein Chronik-Text oder andere Inhalte stehen.</p>
+
+    <div class="bewertung-container">
+      <div class="bewertung-box green"><span>❤️ must have</span></div>
+      <div class="bewertung-box green">+8 außergewöhnlich gut</div>
+      <div class="bewertung-box green">+4 sehr gut</div>
+      <div class="bewertung-box green">+2 gut</div>
+      <div class="bewertung-box green">+1 Ok</div>
+      <div class="bewertung-box neutral">0 neutral</div>
+      <div class="bewertung-box red">-1 nicht Ok</div>
+      <div class="bewertung-box red">-2 schlecht</div>
+      <div class="bewertung-box red">-4 sehr schlecht</div>
+      <div class="bewertung-box red">-8 außergewöhnlich schlecht</div>
+      <div class="bewertung-box red"><span>😡 no go</span></div>
+    </div>
   </div>
 </div>
+
 
 <script>
 // Elemente holen
