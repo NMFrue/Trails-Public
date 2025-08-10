@@ -191,6 +191,76 @@ button.positive.selected {
 </div>
 
 
+<div class="CON-contentBox CON-statement">
+  <div class="main-wrapper">
+    <span class="main">
+      <input type="hidden" id="answer_id" :value='answer.answer_id'>
+
+      <button :class="{ 'selected': answer.score == -8, 'negative': true }" type="submit" name="score" value=-8 @click="handleVote">-8</button>
+      <button :class="{ 'selected': answer.score == -4, 'negative': true }" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button :class="{ 'selected': answer.score == -2, 'negative': true }" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+      <button :class="{ 'selected': answer.score == -1, 'negative': true }" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+      <button :class="{ 'selected': answer.score == null || answer.score == 0, 'MORE-zero-null': true }" type="submit" name="score" value=+0 @click="handleVote">+0</button>
+      <button :class="{ 'selected': answer.score == +1, 'positive': true }" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+      <button :class="{ 'selected': answer.score == +2, 'positive': true }" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+      <button :class="{ 'selected': answer.score == +4, 'positive': true }" type="submit" name="score" value=+4 @click="handleVote">+4</button>
+      <button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+    </span>
+  </div>
+
+</div>
+
+
+<div class="CON-contentBox CON-statement">
+  <div class="main-wrapper">
+    <span class="main">
+      <input type="hidden" id="answer_id" :value='answer.answer_id'>
+
+      <button :class="{ 'selected': answer.score == -8, 'negative': true }" type="submit" name="score" value=-8 @click="handleVote">-8</button>
+      <button :class="{ 'selected': answer.score == -4, 'negative': true }" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button :class="{ 'selected': answer.score == -2, 'negative': true }" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+      <button :class="{ 'selected': answer.score == -1, 'negative': true }" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+      <button :class="{ 'selected': answer.score == null || answer.score == 0, 'MORE-zero-null': true }" type="submit" name="score" value=+0 @click="handleVote">+0</button>
+      <button :class="{ 'selected': answer.score == +1, 'positive': true }" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+      <button :class="{ 'selected': answer.score == +2, 'positive': true }" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+      <button :class="{ 'selected': answer.score == +4, 'positive': true }" type="submit" name="score" value=+4 @click="handleVote">+4</button>
+      <button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+    </span>
+  </div>
+
+</div>
+
+<div class="CON-contentBox CON-statement">
+  <div class="main-wrapper">
+    <span class="main">
+      <input type="hidden" id="answer_id" :value='answer.answer_id'>
+
+      <button :class="{ 'selected': answer.score == -8, 'negative': true }" type="submit" name="score" value=-8 @click="handleVote">-8</button>
+      <button :class="{ 'selected': answer.score == -4, 'negative': true }" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button :class="{ 'selected': answer.score == -2, 'negative': true }" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+      <button :class="{ 'selected': answer.score == -1, 'negative': true }" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+      <button :class="{ 'selected': answer.score == null || answer.score == 0, 'MORE-zero-null': true }" type="submit" name="score" value=+0 @click="handleVote">+0</button>
+      <button :class="{ 'selected': answer.score == +1, 'positive': true }" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+      <button :class="{ 'selected': answer.score == +2, 'positive': true }" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+      <button :class="{ 'selected': answer.score == +4, 'positive': true }" type="submit" name="score" value=+4 @click="handleVote">+4</button>
+      <button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>   
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+			<button :class="{ 'selected': answer.score == +8, 'positive': true }" type="submit" name="score" value=+8 @click="handleVote">+8</button>  
+    </span>
+  </div>
+
+</div>
+
 <!--Ende Des Voting Elements -->
 
 
